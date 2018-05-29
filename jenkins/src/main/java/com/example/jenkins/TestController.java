@@ -12,11 +12,13 @@ public class TestController {
 
     @GetMapping("/")
     public String index(){
+        System.out.println("index");
         return "welcome to jenkins test";
     }
 
     @GetMapping("/hello")
     public String hello(){
+        System.out.println("hello");
         return "hello world";
     }
 }
